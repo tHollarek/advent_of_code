@@ -56,7 +56,7 @@ def find_co2_scrubber_value(input_data):
     return result
 
 
-def day_3_1(input_path, verbose=False):
+def day_3(input_path, verbose=False):
     raw_input = read_csv(input_path)
     input_data = parse(raw_input)
     print_if_verbose(f"Successfully parsed input data:\n{input_data}", verbose)

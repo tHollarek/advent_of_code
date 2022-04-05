@@ -4,8 +4,9 @@ def read_csv(filename):
     return data
 
 
-def print_result(day, part, result):
-    print(f"The result for day {day}, part {part} is: {result}")
+def print_result(day, result):
+    print(f"The result for day {day}, part 1 is: {result[0]}")
+    print(f"The result for day {day}, part 2 is: {result[1]}")
 
 
 def print_if_verbose(text, verbose):
