@@ -27,8 +27,8 @@ def count_increases_sliding_window_alt(int_list):
 
 
 def parse(input):
-    data = [int(i) for i in input.read().strip().split("\n")]
-    return
+    data = [int(i) for i in input]
+    return data
 
 
 def day_1(input_path, verbose=False):
@@ -44,5 +44,4 @@ def day_1(input_path, verbose=False):
 
     num_increases_sliding_window = count_increases_sliding_window(depth_measures)
     print_if_verbose(f"There are {num_increases_sliding_window} increases in the sliding window depth measures", verbose)
-    print_result(day=1, part=1, result=num_increases)
-    print_result(day=1, part=2, result=num_increases_sliding_window)
+    return num_increases, num_increases_sliding_window
